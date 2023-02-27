@@ -1,4 +1,4 @@
-<h2><?= esc($title) ?></h2>
+    <h2><?= esc($title) ?></h2>
 
 <?php if (! empty($news) && is_array($news)): ?>
 
@@ -9,7 +9,7 @@
         <div class="main">
             <?= esc($news_item['body']) ?>
         </div>
-        <p><a href="/lab3/ci4/public/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></p>
+        <p><a href="http://apcwebprog.csf.ph/lab3/ci4/public/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></p>
 
     <?php endforeach ?>
 
