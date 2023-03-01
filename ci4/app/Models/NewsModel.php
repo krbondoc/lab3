@@ -6,8 +6,10 @@ use CodeIgniter\Model;
 
 class NewsModel extends Model
 {
-    protected $table = 'krbondoc_News';
+    protected $table = 'krbondoc_createNews';
 
+    protected $allowedFields = ['title', 'slug', 'body'];
+    
     public function getNews($slug = false)
     {
         if ($slug === false) {
