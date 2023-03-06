@@ -1,7 +1,7 @@
 <title>Success!</title>
 <div id="panel" class="panel-container">
 <h2 style="font-family: 'Forum', cursive;"><b>Comment created successfully. Thank you!</b></h2>
-<p href="../guest">View Comments</p>
+<p> <a href="../guest">View Comments</a></p>
 </div>
 <style>
     body {
