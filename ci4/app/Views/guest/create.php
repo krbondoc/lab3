@@ -11,7 +11,7 @@
 
 <div id="panel" class="panel-container">
 <h2 style="font-family: 'Forum', cursive;"><b>Leave A Comment</b></h2>
-<form action="/~krbondoc/lab3/ci4/public/guest/index" method="post">
+<form action="create" method="post">
     <?= csrf_field() ?>
 
     <label for="name">Name</label>

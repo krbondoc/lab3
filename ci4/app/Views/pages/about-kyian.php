@@ -88,7 +88,6 @@
       line-height:24px;
       text-align: center;
       position: relative;
-      margin-bottom: -500px;
     }
     .left {
       width: 25%;

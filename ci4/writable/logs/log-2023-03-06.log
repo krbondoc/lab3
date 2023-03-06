@@ -212,3 +212,52 @@ INFO - 2023-03-06 06:53:29 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-03-06 06:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-03-06 06:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-03-06 06:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:18:34 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in C:\wampserver64\www\lab3\ci4\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\wampserver64\www\lab3\ci4\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('192.168.150.213', 'webprogmi212', 'b3ntRhino98', 'webprogmi212', 3306, '', 0)
+#1 C:\wampserver64\www\lab3\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wampserver64\www\lab3\ci4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wampserver64\www\lab3\ci4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wampserver64\www\lab3\ci4\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wampserver64\www\lab3\ci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wampserver64\www\lab3\ci4\app\Models\GuestModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\wampserver64\www\lab3\ci4\app\Controllers\Guest.php(14): App\Models\GuestModel->getGuest()
+#8 C:\wampserver64\www\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\Guest->index()
+#9 C:\wampserver64\www\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+#10 C:\wampserver64\www\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wampserver64\www\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ in C:\wampserver64\www\lab3\ci4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wampserver64\www\lab3\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wampserver64\www\lab3\ci4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wampserver64\www\lab3\ci4\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wampserver64\www\lab3\ci4\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wampserver64\www\lab3\ci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wampserver64\www\lab3\ci4\app\Models\GuestModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 C:\wampserver64\www\lab3\ci4\app\Controllers\Guest.php(14): App\Models\GuestModel->getGuest()
+#7 C:\wampserver64\www\lab3\ci4\system\CodeIgniter.php(934): App\Controllers\Guest->index()
+#8 C:\wampserver64\www\lab3\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+#9 C:\wampserver64\www\lab3\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wampserver64\www\lab3\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-06 07:18:34 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `krbondoc_myguests`', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\GuestModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Guest.php(14): App\Models\GuestModel->getGuest()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guest->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
