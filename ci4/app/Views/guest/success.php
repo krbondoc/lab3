@@ -31,7 +31,7 @@
     justify-content: center;
     align-items: center;
     line-height: 60px;
-    margin: 100px 300px -900px 300px;
+    margin: 100px 300px -700px 300px;
   }
     p{
         text-decoration: none;
