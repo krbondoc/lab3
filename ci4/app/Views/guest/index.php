@@ -35,6 +35,7 @@
       background-attachment: fixed;
       background-size: cover;
       overflow-x: hidden;
+      padding-bottom: 400px;
     }
   .content .main{
     background-color: rgb(244, 178, 228);
@@ -45,7 +46,6 @@
     display: flex;
     flex-direction: column;
     margin: 50px 300px 30px 300px;
-    padding-bottom: 200px;
   }
   .content h2{
     font-family: 'Forum', cursive;
