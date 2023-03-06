@@ -17,14 +17,14 @@
     <section class="hero">
     <header>
       <div class="logo">
-        <h2 style="font-family: 'Sevillana', cursive;"><a href="index.php">K ' s  C o d e L a n d</a></h2>
+        <h2 style="font-family: 'Sevillana', cursive;"><a href="index">K ' s  C o d e L a n d</a></h2>
       </div>
       <nav>
         <ul>
-          <li><a href="cssapp.php">HTML/CSS Journey</a></li>
-          <li><a href="about-kyian.php">About Kyian</a></li>
-          <li><a href="aspects.php">Interesting Aspects in Life</a></li>
-          <li><a href="form/feedback.php">Feedback Form</a></li>
+          <li><a href="cssapp">HTML/CSS Journey</a></li>
+          <li><a href="about-kyian">About Kyian</a></li>
+          <li><a href="aspects">Interesting Aspects in Life</a></li>
+          <li><a href="form/feedback">Feedback Form</a></li>
         </ul>
       </nav>
     </header>
@@ -46,7 +46,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <h6 style="font-size:24px"><a href="resources.html">Resources</a></h6>
+            <h6 style="font-size:24px"><a href="resources">Resources</a></h6>
           </div>
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
