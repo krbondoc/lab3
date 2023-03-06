@@ -20,7 +20,7 @@
     <?php endforeach ?>
 
 <?php else: ?>
-    <h3>No guests</h3>
+    <h2>No guests</h2>
     <p>Unable to find any guests for you.</p>
 </section>
 </body>
