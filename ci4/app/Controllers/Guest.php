@@ -12,7 +12,7 @@ class Guest extends BaseController
 
         $data = [
             'guest'  => $model->getGuest(),
-            'title' => 'Guestbook',
+            'title' => 'Comments',
         ];
 
         return view('templates/header', $data)
@@ -27,7 +27,7 @@ class Guest extends BaseController
         // Checks whether the form is submitted.
         if (! $this->request->is('post')) {
             // The form is not submitted, so returns the form.
-            return view('templates/header', ['title' => 'Create a guest entry'])
+            return view('templates/header', ['title' => 'Share your thoughts!'])
                 . view('guest/create')
                 . view('templates/footer');
         }
@@ -39,7 +39,7 @@ class Guest extends BaseController
             'name' => 'required|max_length[255]|min_length[3]',
             'email' => 'required|max_length[255]|min_length[3]',
             'website' => 'required|max_length[255]|min_length[3]',			
-            'comment'  => 'required|max_length[5000]|min_length[10]',
+            'comment'  => 'required|max_length[500]|min_length[10]',
             'gender' => 'required|max_length[255]|min_length[3]',			
         ])) {
             // The validation fails, so returns the form.

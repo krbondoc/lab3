@@ -35,7 +35,6 @@
       background-attachment: fixed;
       background-size: cover;
       overflow-x: hidden;
-      padding-bottom: 400px;
     }
   .content .main{
     background-color: rgb(244, 178, 228);
